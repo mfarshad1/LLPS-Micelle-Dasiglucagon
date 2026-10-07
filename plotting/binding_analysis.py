@@ -1,50 +1,113 @@
 from pathlib import Path
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rc
+import matplotlib.ticker as ticker
+from matplotlib.ticker import AutoMinorLocator
 
-ROOT = Path(__file__).resolve().parents[1]
-FILE = (
-    ROOT / "reduced_data" / "binding" /
-    "dg_bound_unbound_analysis_4mer_-6_fixed_regions_3replicas.txt"
+
+rc('text', usetex=True)
+rc('text.latex', preamble=r'\usepackage{bm}')
+rc('ps', usedistiller='xpdf')
+rc('font', **{'family': 'serif', 'serif': ['Computer Modern Roman']})
+
+rc('axes', labelsize=28)
+rc('xtick', labelsize=24)
+rc('ytick', labelsize=24)
+
+formatter = ticker.ScalarFormatter(useMathText=True)
+formatter.set_scientific(True)
+formatter.set_powerlimits((-1, 1))
+
+REPO = Path(__file__).resolve().parents[1]
+summary_txt = REPO / "reduced_data" / "binding" / "dg_bound_unbound_analysis_4mer_-6_fixed_regions_3replicas.txt"
+output_pdf = REPO / "reproduced_figures" / "figure7_binding_analysis.pdf"
+output_pdf.parent.mkdir(parents=True, exist_ok=True)
+
+arr = np.loadtxt(summary_txt, comments="#")
+if arr.ndim == 1:
+    arr = arr[None, :]
+
+# Column order matches original np.savetxt header
+charges = arr[:, 0]
+bound_dense = arr[:, 2]
+bound_dense_std = arr[:, 3]
+unbound_dense = arr[:, 4]
+unbound_dense_std = arr[:, 5]
+bound_dilute = arr[:, 6]
+bound_dilute_std = arr[:, 7]
+unbound_dilute = arr[:, 8]
+unbound_dilute_std = arr[:, 9]
+
+x = np.arange(len(charges))
+w = 0.18
+
+# Wide one-panel figure, but compatible with other manuscript plots
+fig, ax = plt.subplots(1, 1, figsize=(10.5, 4.5))
+
+ax.bar(
+    x - 1.5 * w,
+    bound_dense,
+    width=w,
+    yerr=bound_dense_std,
+    capsize=3,
+    label='Bound, central'
 )
-OUT = ROOT / "reproduced_figures" / "figure7_binding_analysis.pdf"
 
-x = np.loadtxt(FILE)
+ax.bar(
+    x - 0.5 * w,
+    unbound_dense,
+    width=w,
+    yerr=unbound_dense_std,
+    capsize=3,
+    label='Unbound, central'
+)
 
-q = x[:, 0]
+ax.bar(
+    x + 0.5 * w,
+    bound_dilute,
+    width=w,
+    yerr=bound_dilute_std,
+    capsize=3,
+    label='Bound, outer'
+)
 
-# Columns from repository header
-bc, bc_sd = x[:, 2], x[:, 3]
-uc, uc_sd = x[:, 4], x[:, 5]
-bo, bo_sd = x[:, 6], x[:, 7]
-uo, uo_sd = x[:, 8], x[:, 9]
+ax.bar(
+    x + 1.5 * w,
+    unbound_dilute,
+    width=w,
+    yerr=unbound_dilute_std,
+    capsize=3,
+    label='Unbound, outer'
+)
 
-fig, ax = plt.subplots(figsize=(5.2, 4.0))
+ax.set_ylim(None, 700)
+ax.set_xticks(x)
+ax.set_xticklabels([rf'${int(q)}$' for q in charges], fontsize=24)
 
-ax.errorbar(q, bc, yerr=bc_sd,
-            marker="o", capsize=2,
-            label="Bound, central")
+ax.set_xlabel(r'$\mathbf{\mathit{q}^{*}_{M}}$', fontsize=40, labelpad=5)
+ax.set_ylabel(r'{DG count}', fontsize=40, labelpad=8)
 
-ax.errorbar(q, uc, yerr=uc_sd,
-            marker="s", capsize=2,
-            label="Unbound, central")
+ax.legend(
+    frameon=False,
+    borderpad=0.1,
+    labelspacing=0.2,
+    columnspacing=0.2,
+    borderaxespad=0.4,
+    handletextpad=0.4,
+    fontsize='20',
+    loc='upper right',
+    handlelength=0.8
+)
 
-ax.errorbar(q, bo, yerr=bo_sd,
-            marker="^", capsize=2,
-            label="Bound, outer")
+ax.xaxis.set_minor_locator(AutoMinorLocator())
+ax.yaxis.set_minor_locator(AutoMinorLocator())
 
-ax.errorbar(q, uo, yerr=uo_sd,
-            marker="D", capsize=2,
-            label="Unbound, outer")
+ax.tick_params(which='major', length=5, pad=4)
+ax.tick_params(which='minor', length=3)
 
-ax.set_xlabel(r"$q_{\mathrm{M}}^*$")
-ax.set_ylabel("DG count")
-ax.legend(frameon=False)
+plt.tight_layout()
+plt.savefig(output_pdf, bbox_inches='tight', dpi=300)
 
-ax.tick_params(direction="in", top=True, right=True)
-
-fig.tight_layout()
-fig.savefig(OUT, bbox_inches="tight")
-print(f"Saved {OUT}")
+print("Saved figure to:", output_pdf)
+plt.show()
