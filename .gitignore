@@ -12,3 +12,10 @@ postrun.cfg.*
 
 # macOS
 .DS_Store
+
+# Generated manuscript reproduction outputs
+reproduced_figures/
+plot_logs/
+figure_check_logs/
+figure_check_report.txt
+analysis/charge_mapping/Charge_pH.pdf

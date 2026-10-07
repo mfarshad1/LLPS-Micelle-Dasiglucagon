@@ -23,3 +23,15 @@ Full data generated in preparing this article are available from the correspondi
 ## Notes
 
 The analysis scripts are preserved in the form used for the manuscript and therefore contain paths corresponding to the original CRC computing environment. Representative simulation inputs and reduced manuscript data are included in this repository.
+
+## Reproducing manuscript figures
+
+The Python-generated quantitative figures can be reproduced directly from the reduced data included in this repository.
+
+Install the Python dependencies with `pip install -r requirements.txt`.
+
+Then run `./run_all_plots.sh`.
+
+The script reproduces the computational plots corresponding to Figures 3, 5, 6b, 7, 8, and 9 using only files contained in this repository. Generated PDFs are written to `reproduced_figures/`.
+
+The script `tools/prepare_figure6_8_reduced_data.py` documents the one-time reduction procedure used to construct the compact Figure 6 and Figure 8 datasets from the original trajectory-level simulation outputs. The original large simulation outputs are not required to run `run_all_plots.sh`.

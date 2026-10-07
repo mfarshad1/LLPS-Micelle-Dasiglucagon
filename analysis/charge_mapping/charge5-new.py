@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from scipy.interpolate import interp1d
 from scipy.optimize import brentq
-from Bio.PDB import PDBIO, StructureBuilder
 import MDAnalysis as mda
 import os
 import subprocess
