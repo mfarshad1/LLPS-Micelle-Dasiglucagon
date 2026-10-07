@@ -1,0 +1,136 @@
+Charge,Species,Replica,Blocks used,Path
+10,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep1/density_polymer.q-10.00.data
+10,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep2/density_polymer.q-10.00.data
+10,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep3/density_polymer.q-10.00.data
+10,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep1/density_micelle.q-10.00.data
+10,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep2/density_micelle.q-10.00.data
+10,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep3/density_micelle.q-10.00.data
+10,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep1/density_all.q-10.00.data
+10,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep2/density_all.q-10.00.data
+10,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-10.00/rep3/density_all.q-10.00.data
+11,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep1/density_polymer.q-11.00.data
+11,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep2/density_polymer.q-11.00.data
+11,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep3/density_polymer.q-11.00.data
+11,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep1/density_micelle.q-11.00.data
+11,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep2/density_micelle.q-11.00.data
+11,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep3/density_micelle.q-11.00.data
+11,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep1/density_all.q-11.00.data
+11,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep2/density_all.q-11.00.data
+11,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-11.00/rep3/density_all.q-11.00.data
+12,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep1/density_polymer.q-12.00.data
+12,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep2/density_polymer.q-12.00.data
+12,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep3/density_polymer.q-12.00.data
+12,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep1/density_micelle.q-12.00.data
+12,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep2/density_micelle.q-12.00.data
+12,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep3/density_micelle.q-12.00.data
+12,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep1/density_all.q-12.00.data
+12,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep2/density_all.q-12.00.data
+12,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-12.00/rep3/density_all.q-12.00.data
+13,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep1/density_polymer.q-13.00.data
+13,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep2/density_polymer.q-13.00.data
+13,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep3/density_polymer.q-13.00.data
+13,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep1/density_micelle.q-13.00.data
+13,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep2/density_micelle.q-13.00.data
+13,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep3/density_micelle.q-13.00.data
+13,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep1/density_all.q-13.00.data
+13,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep2/density_all.q-13.00.data
+13,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-13.00/rep3/density_all.q-13.00.data
+14,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep1/density_polymer.q-14.00.data
+14,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep2/density_polymer.q-14.00.data
+14,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep3/density_polymer.q-14.00.data
+14,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep1/density_micelle.q-14.00.data
+14,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep2/density_micelle.q-14.00.data
+14,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep3/density_micelle.q-14.00.data
+14,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep1/density_all.q-14.00.data
+14,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep2/density_all.q-14.00.data
+14,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-14.00/rep3/density_all.q-14.00.data
+15,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep1/density_polymer.q-15.00.data
+15,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep2/density_polymer.q-15.00.data
+15,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep3/density_polymer.q-15.00.data
+15,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep1/density_micelle.q-15.00.data
+15,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep2/density_micelle.q-15.00.data
+15,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep3/density_micelle.q-15.00.data
+15,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep1/density_all.q-15.00.data
+15,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep2/density_all.q-15.00.data
+15,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-15.00/rep3/density_all.q-15.00.data
+16,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep1/density_polymer.q-16.00.data
+16,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep2/density_polymer.q-16.00.data
+16,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep3/density_polymer.q-16.00.data
+16,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep1/density_micelle.q-16.00.data
+16,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep2/density_micelle.q-16.00.data
+16,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep3/density_micelle.q-16.00.data
+16,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep1/density_all.q-16.00.data
+16,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep2/density_all.q-16.00.data
+16,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-16.00/rep3/density_all.q-16.00.data
+17,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep1/density_polymer.q-17.00.data
+17,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep2/density_polymer.q-17.00.data
+17,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep3/density_polymer.q-17.00.data
+17,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep1/density_micelle.q-17.00.data
+17,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep2/density_micelle.q-17.00.data
+17,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep3/density_micelle.q-17.00.data
+17,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep1/density_all.q-17.00.data
+17,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep2/density_all.q-17.00.data
+17,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-17.00/rep3/density_all.q-17.00.data
+18,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep1/density_polymer.q-18.00.data
+18,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep2/density_polymer.q-18.00.data
+18,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep3/density_polymer.q-18.00.data
+18,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep1/density_micelle.q-18.00.data
+18,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep2/density_micelle.q-18.00.data
+18,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep3/density_micelle.q-18.00.data
+18,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep1/density_all.q-18.00.data
+18,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep2/density_all.q-18.00.data
+18,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-18.00/rep3/density_all.q-18.00.data
+19,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep1/density_polymer.q-19.00.data
+19,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep2/density_polymer.q-19.00.data
+19,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep3/density_polymer.q-19.00.data
+19,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep1/density_micelle.q-19.00.data
+19,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep2/density_micelle.q-19.00.data
+19,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep3/density_micelle.q-19.00.data
+19,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep1/density_all.q-19.00.data
+19,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep2/density_all.q-19.00.data
+19,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-19.00/rep3/density_all.q-19.00.data
+20,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep1/density_polymer.q-20.00.data
+20,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep2/density_polymer.q-20.00.data
+20,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep3/density_polymer.q-20.00.data
+20,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep1/density_micelle.q-20.00.data
+20,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep2/density_micelle.q-20.00.data
+20,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep3/density_micelle.q-20.00.data
+20,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep1/density_all.q-20.00.data
+20,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep2/density_all.q-20.00.data
+20,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-20.00/rep3/density_all.q-20.00.data
+21,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep1/density_polymer.q-21.00.data
+21,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep2/density_polymer.q-21.00.data
+21,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep3/density_polymer.q-21.00.data
+21,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep1/density_micelle.q-21.00.data
+21,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep2/density_micelle.q-21.00.data
+21,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep3/density_micelle.q-21.00.data
+21,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep1/density_all.q-21.00.data
+21,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep2/density_all.q-21.00.data
+21,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-21.00/rep3/density_all.q-21.00.data
+22,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep1/density_polymer.q-22.00.data
+22,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep2/density_polymer.q-22.00.data
+22,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep3/density_polymer.q-22.00.data
+22,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep1/density_micelle.q-22.00.data
+22,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep2/density_micelle.q-22.00.data
+22,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep3/density_micelle.q-22.00.data
+22,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep1/density_all.q-22.00.data
+22,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep2/density_all.q-22.00.data
+22,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-22.00/rep3/density_all.q-22.00.data
+23,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep1/density_polymer.q-23.00.data
+23,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep2/density_polymer.q-23.00.data
+23,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep3/density_polymer.q-23.00.data
+23,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep1/density_micelle.q-23.00.data
+23,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep2/density_micelle.q-23.00.data
+23,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep3/density_micelle.q-23.00.data
+23,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep1/density_all.q-23.00.data
+23,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep2/density_all.q-23.00.data
+23,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-23.00/rep3/density_all.q-23.00.data
+24,DG / polymer,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep1/density_polymer.q-24.00.data
+24,DG / polymer,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep2/density_polymer.q-24.00.data
+24,DG / polymer,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep3/density_polymer.q-24.00.data
+24,Micelle,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep1/density_micelle.q-24.00.data
+24,Micelle,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep2/density_micelle.q-24.00.data
+24,Micelle,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep3/density_micelle.q-24.00.data
+24,All,1,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep1/density_all.q-24.00.data
+24,All,2,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep2/density_all.q-24.00.data
+24,All,3,198,/groups/jwhitme1/Data-MF-01/LLPS/llps-data/biphasic/dg-1-7_2/4mer_-6/q-24.00/rep3/density_all.q-24.00.data

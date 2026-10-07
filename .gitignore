@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Large simulation outputs
+eq_T.dump
+prod_T.dump
+postrun.cfg.*
+
+# Scheduler output
+*.o*
+
+# macOS
+.DS_Store

@@ -1,0 +1,149 @@
+# Si_md_nvt.in
+
+# variables
+variable        dt equal 0.0001 # timestep
+variable        NEVERY equal 1000
+variable        NREPEAT equal 10
+variable        NFREQ equal 10000
+
+# general parameters
+dimension       3
+units           lj
+boundary        p p p
+timestep        ${dt}
+atom_style      full
+
+# This reads in and tests the ``equilibrated'' file at various
+# effective temperatures to see what will generate a polymer liquid3
+
+echo screen
+
+# First, read in binary restart file
+#read_restart equilibrated.cfg.0    
+read_data ../system.data
+reset_timestep 0
+
+#------------------------------------------------------------------------------
+# charge interactions 
+#------------------------------------------------------------------------------
+# there's a multiplier (qresc) relative to Chapela et al
+# to account for LAMMPS implementation of DH/Yukawa
+# and to scale the charge energy up to where the
+# "LJ" system should be liquid (qbase)
+
+variable qbase equal QQQQQ
+variable kappa equal 1.0
+variable qrescM equal "v_qbase*exp(v_kappa*10/2.)"
+# variable qrescP equal "-v_qrescM/(6*3)"
+variable qrescP equal "((-6*7.464)/(4*sqrt(78.5)))*exp(v_kappa*1/2.)"
+
+#------------------------------------------------------------------------------
+# polymer--solvent model based on Kremer-Grest,
+# + 2021 S. Cheng solvent paper
+# 
+# Associative interactions of polymer with solvent
+#  and solvent--solvent
+#
+# p-p association only through charge
+#  cations: type 1
+#  anions:  type 2
+# shifted/truncated interactions (zero at cutoff)
+#
+# The density is constructed in the input file so that
+#  a LJ material will be *liquid* at T=1.0*epsilon
+#------------------------------------------------------------------------------
+
+pair_style lj/cut/coul/debye ${kappa} 25 50.0
+pair_coeff 1 1 1.0 10 11.2246204831 20.0
+pair_coeff 1 2 1.0 5.5 6.1735412657 15.5
+pair_coeff 2 2 1.0 1.0 1.12246204831 11.0
+
+set type 1 charge ${qrescM}
+set type 2 charge ${qrescP}
+
+# Masses
+mass            1 2.5            # Reduced mass for 10 nm nanoparticle
+mass            2 0.01              # Reduced mass for oligomer bead
+
+#------------------------------------------------------------------------------
+# Fene-bonds take care of intra-chain interactions
+#------------------------------------------------------------------------------
+# Uses standard fene special bonds for speed reasons
+# (no identity change of monomers during the simulation)
+# K coefficients derived from...? [30 seems a more typical choice?]
+bond_style fene
+#bond_coeff 1 100.0 2.0 1.0 1.0 
+bond_coeff 1 100.0 2.0 1.0 1.0 
+special_bonds fene
+
+# Set own fixes
+# Langevin Thermostat (Change the seed to randomize;
+#  will require a "burn-in" period)
+
+#in filenames, record temp as temp * 1000
+fix 0 all nve
+#fix 1 all langevin 300.0 100.0 100.0 RSEED1 # Constant Langevin temperature
+fix 1 all langevin 1.0 1.0 1.0 RSEED1 # Constant Langevin temperature
+#fix 5 all spring tether 100.0 0 0 0 0.0
+fix 5 all recenter 0.0 0.0 0.0 units box
+
+# minimization 
+minimize        1e-6 1e-4 10000 1000000
+
+# Set a reasonable bin size and neighbor skin
+neighbor 2.0 bin
+neigh_modify binsize 3.0 delay 10 every 1 check yes
+
+# Increase max neighbors per atom without overdoing it
+neigh_modify one 20000 page 200000
+
+# Save equilibration trajectory
+dump DUMP_eq all custom 10000 eq_T.dump id type x y z
+
+# Number of equilibration time steps
+run 20000000
+
+# unfix 5
+
+#run 5000000
+
+# groups
+group micelle type 1
+group polymer  type 2
+group all_beads union polymer micelle
+
+region myregion block INF INF INF INF -50 50
+
+group polymer_in_region region myregion
+group polymers_in_zregion intersect polymer polymer_in_region
+
+# Compute number density per chunk
+comm_modify cutoff 50
+compute 11 all_beads chunk/atom bin/1d z lower .3
+compute 1 polymer chunk/atom bin/1d z lower .3
+compute 10 micelle chunk/atom bin/1d z lower .3
+compute 3 all rdf 100 1 1 1 2 2 2 1*2 1*2 cutoff 25.0
+compute 6 all     pressure thermo_temp
+compute 7 polymer com
+compute 8 polymer msd com yes average yes
+compute 12 polymers_in_zregion msd com yes average yes
+
+fix 11 polymer ave/chunk 100  1000   100000   11 density/number file density_all.q-QQQQQ.data
+fix 2 polymer ave/chunk 100   1000   100000   1  density/number file density_polymer.q-QQQQQ.data
+fix 3 micelle ave/chunk 100   1000   100000   10 density/number file density_micelle.q-QQQQQ.data
+fix 4 all ave/time  100   1000   100000 c_3[*] file out.q-QQQQQ.rdf mode vector
+fix 6 all ave/time  100   1000   100000 c_6 file pressure.temp.q-QQQQQ.data 
+fix 7 all ave/time  100000 1     100000 c_7[1] c_7[2] c_7[3] file com.polymer.q-QQQQQ.out
+fix 8 all ave/time  100   1000   100000 c_8[4] file msd_total_com.dat
+fix 12 all ave/time 100   1000   100000 c_12[4] file msd_region_com.dat
+
+# Set thermo styles
+thermo 1000
+thermo_style custom step temp density press
+
+# Run my system and see what happens
+
+dump DUMP_prod all custom 10000 prod_T.dump id type x y z
+
+run 20000000
+write_restart postrun.cfg.*
